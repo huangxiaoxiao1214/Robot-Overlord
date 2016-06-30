@@ -66,7 +66,7 @@ public class Model implements Serializable {
 		if(index==-1) {
 			loadFromFile(sourceName);
 		} else {
-			index = sourceName.lastIndexOf(":");
+			index = sourceName.lastIndexOf(':');
 			loadFromZip(sourceName.substring(0, index), sourceName.substring(index+1,sourceName.length()));
 		}
 	}

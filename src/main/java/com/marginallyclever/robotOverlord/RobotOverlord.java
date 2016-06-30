@@ -458,7 +458,7 @@ implements ActionListener, MouseListener, MouseMotionListener, KeyListener, GLEv
 				if (start != -1 && end != -1) {
 					inputLine = inputLine.substring(start + matchStart.length(), end);
 					// parse the last part of the redirect URL, which contains the release tag (which is the VERSION)
-					inputLine = inputLine.substring(inputLine.lastIndexOf("/") + 1);
+					inputLine = inputLine.substring(inputLine.lastIndexOf('/') + 1);
 
 					System.out.println("last release: " + inputLine);
 					System.out.println("your VERSION: " + VERSION);

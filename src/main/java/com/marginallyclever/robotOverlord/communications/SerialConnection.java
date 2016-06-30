@@ -78,7 +78,7 @@ implements SerialPortEventListener, AbstractConnection {
 //					Log(rawInput);
 					inputBuffer+=rawInput;
 					// each line ends with a \n.
-					for( x=inputBuffer.indexOf("\n"); x!=-1; x=inputBuffer.indexOf("\n") ) {
+					for( x=inputBuffer.indexOf('\n'); x!=-1; x=inputBuffer.indexOf('\n') ) {
 						x=x+1;
 						oneLine = inputBuffer.substring(0,x);
 						inputBuffer = inputBuffer.substring(x);
